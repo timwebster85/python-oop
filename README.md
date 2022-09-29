@@ -14,7 +14,8 @@ https://www.youtube.com/watch?v=Ej_02ICOIgs&ab_channel=freeCodeCamp.org
 * Class attributes are shared belongs to the class itself
 * instance attribute are only for the instance of that class
 * `__dict__` all the attribute for Class level and instance level. This is useful for debugging
-*
+* `__repr__` 
+* ![image](https://user-images.githubusercontent.com/32961611/193047084-6c902c74-5850-4e30-be5d-d94d067e205f.png)
 *
 *
 *
