@@ -1,7 +1,10 @@
-from pprint import pprint
+import csv
+
 
 class Item:
+
     pay_rate = 0.8 # pay rate after 20% discount
+    all = []
 
     def __init__(self, name: str, price: float, qty=0):
         # Run validations to recieved args
@@ -13,6 +16,9 @@ class Item:
         self.price = price
         self.qty = qty
 
+        # Actions to execute
+        Item.all.append(self)
+
     def calc_total_price(self):
         return self.price * self.qty
 
@@ -20,14 +26,42 @@ class Item:
     def apply_discount(self):
         self.price = self.price * self.pay_rate
 
+    @classmethod
+    def load_from_csv(cls):
+        with open("src/items.csv", "r") as f:
+            reader = csv.DictReader(f)
+            items = list(reader)
+        
+        for item in items:
+            Item(
+                name = item.get('name'),
+                price = float(item.get('price')),
+                qty = int(item.get('qty')),
+            )
+
+    @staticmethod
+    def is_int(num):
+        if isinstance(num, float):
+            return num.is_integer()
+        elif isinstance(num, int):
+            return True
+        else:
+            return False
 
 
-item1 = Item('Phone', 100, 5)
-item1.apply_discount()
-print(item1.price)
+
+    def __repr__(self):
+        return f"Item('{self.name}, {self.price}, {self.qty}')"
 
 
-item2 = Item("Laptop", 1000, 3)
-item2.pay_rate = 0.7
-item2.apply_discount()
-print(item2.price)
+class Phone(Item):
+    pass
+
+phone1 = Phone("iPhone10", 500, 5)
+phone1.broken_phone = 1
+
+phone2 = Phone("iPhone13", 800, 10)
+phone2.broken_phone = 10
+
+
+
