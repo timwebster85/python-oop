@@ -22,4 +22,8 @@ https://www.youtube.com/watch?v=Ej_02ICOIgs&ab_channel=freeCodeCamp.org
 * `cls` loads the class itself
 * static mehtod should do some work for you that has some logical connection to a class
     * a static method is bound to a class rather than the objects for that class
+* Parent and child classes
+* ![image](https://user-images.githubusercontent.com/32961611/193412181-c67a773a-7722-4ced-9f44-a3c6fc332739.png)
 *
+*
+
