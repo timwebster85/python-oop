@@ -23,6 +23,10 @@ class Item:
     def name(self):
         return self.__name
 
+    @name.setter
+    def name(self, value):
+        self.__name = value
+
     def calc_total_price(self):
         return self.price * self.qty
 

@@ -30,7 +30,8 @@ https://www.youtube.com/watch?v=Ej_02ICOIgs&ab_channel=freeCodeCamp.org
 * Decorators are like another function that you pre execute before another function
 * Puttig 2 `__` infornt of a variable or attribute makes it a "private" atrribute
 * `@property` decorator makes things read only
-* 
+* `@name.setter` used t change variables that are read only
+    * https://www.geeksforgeeks.org/getter-and-setter-in-python/
 * 
 
 
