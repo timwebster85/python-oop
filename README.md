@@ -24,6 +24,14 @@ https://www.youtube.com/watch?v=Ej_02ICOIgs&ab_channel=freeCodeCamp.org
     * a static method is bound to a class rather than the objects for that class
 * Parent and child classes
 * ![image](https://user-images.githubusercontent.com/32961611/193412181-c67a773a-7722-4ced-9f44-a3c6fc332739.png)
-*
-*
+* super functions allows us to use functionality from parent class
+* `self.__class__.__name__` allows you to see the name of the class in a parent child situation
+* Encapsulation - describes the concept of bundling data and methods within a single unit
+* Decorators are like another function that you pre execute before another function
+* Puttig 2 `__` infornt of a variable or attribute makes it a "private" atrribute
+* `@property` decorator makes things read only
+* 
+* 
+
+
 
