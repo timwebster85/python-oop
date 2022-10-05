@@ -1,10 +1,7 @@
-from item import Item
+from phone import Phone
 
+item1 = Phone("MyBox", 600, 8)
 
-item1 = Item("MyBox", 600)
-print(item1.name)
+item1.apply_increment(0.2)
 
-
-item1.name = 'Otter'
-
-print(item1.name)
+print(item1.price)

@@ -20,7 +20,7 @@ https://www.youtube.com/watch?v=Ej_02ICOIgs&ab_channel=freeCodeCamp.org
 * ![image](https://user-images.githubusercontent.com/32961611/193047084-6c902c74-5850-4e30-be5d-d94d067e205f.png)
 * `@classmethod` using this converts function into a class method
 * `cls` loads the class itself
-* static mehtod should do some work for you that has some logical connection to a class
+* `@staticmethod` static mehtod should do some work for you that has some logical connection to a class
     * a static method is bound to a class rather than the objects for that class
 * Parent and child classes
 * ![image](https://user-images.githubusercontent.com/32961611/193412181-c67a773a-7722-4ced-9f44-a3c6fc332739.png)
@@ -33,6 +33,23 @@ https://www.youtube.com/watch?v=Ej_02ICOIgs&ab_channel=freeCodeCamp.org
 * `@name.setter` used t change variables that are read only
     * https://www.geeksforgeeks.org/getter-and-setter-in-python/
 * 
+
+* Encapsulation - Restricting directed action to attributes of program
+    * `using __`
+    * you don't allow access directly to an attribut you modify using a method
+    * Check `apply_increment and apply_discount` functions
+* Abstraction - only show the nessary atrrib hide the unnessary details from users
+    * hide unnessary info from instances i.e the email sending example
+    * use `__` double underscore to hide the functions \ methods
+    * 
+* Inheritance - Inheritance is the capability of one class to derive or inherit the properties from another class.
+    * Parent child stuff as above
+    *
+* Polymorphism - abilite to have diff scenarios The word polymorphism means having many forms. In programming, polymorphism means the same function name (but different signatures) being used for different types.
+    * https://www.geeksforgeeks.org/polymorphism-in-python/
+    * 
+    *
+
 
 
 
